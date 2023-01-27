@@ -1,7 +1,6 @@
 /**************************************************************************************
     Author: Mordechai Ben Shimon
-    Creation date :  01/01/23
-    Last modified date:  --
+    Creation date :  21/01/23
     Description : This file contains functions related to managing a list of players in a game.
     The functions allows you to create a new player, create a list of active players, create an array of players from the linked list of active players and
     sort the array of active players using the merge sort algorithm,
@@ -77,12 +76,15 @@ void StartGame()
     eErr = MergeSort(array, size);
     tree = BuildTreeFromArray(array, size);
     CheckListActivePlayers(&maneger, tree, &winners);
-   PrintSudokuWinnersAndBoards(winners);
+    if (winners)
+    {
+        PrintSudokuWinnersAndBoards(winners);
+    }
+
  
 
     DestroyTree(tree->root);
     free(tree);
-    //DestroyActivePlayersList(head);
     DestroyWinnersList(winners);
     free(array);
 }
@@ -241,7 +243,7 @@ Errors MergeSort(Player_t** array, size_t size)
     free(newArray);
 }
 
-void Merge(Player_t** array1,int sizeArray1, Player_t** array2, int sizeArray2, Player_t** newArray)
+void Merge(Player_t** array1, int sizeArray1, Player_t** array2, int sizeArray2, Player_t** newArray)
 {
     int numOfPlayerOne = 0, numOfPlayerTwo = 0;
     int indexArray1 = 0, indexArray2 = 0, i = 0, result = 0;
@@ -524,10 +526,8 @@ void MovePlayerToWinningList(ActivePlayerslistManeger_t* maneger, TreeNodePlayer
 {
     ActivePlayers_t* curr = maneger->head, *prev = NULL;
 
-    if (!maneger->head || !player)
-    {
-        return ;
-    }
+    
+    assert(maneger->head || player);
     if (maneger->head->player->name == player->name)
     {
         curr = maneger->head;
@@ -555,7 +555,8 @@ void MovePlayerToWinningList(ActivePlayerslistManeger_t* maneger, TreeNodePlayer
 
 void DestroyPlayerFromActivePlayersList(ActivePlayers_t* player)
 {
-    if (!player) {
+    if (!player)
+    {
         return;
     }
 

@@ -1,7 +1,6 @@
 /**************************************************************************************
     Author: Mordechai Ben Shimon
-    Creation date :  01/01/23
-    Last modified date:  --
+    Creation date :  21/01/23
     Description : This file contains functions that generate the initial board of a Sudoku game randomly.
     The main function CreateSudokuBoard initializes all the cells on the board to -1, and creates a random board by using a linked list with all possible squares on the board.
     The function generates a random number, N, between 8 and 21 and performs this operation N times.

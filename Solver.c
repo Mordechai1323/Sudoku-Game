@@ -1,7 +1,6 @@
 /**************************************************************************************
     Author: Mordechai Ben Shimon
-    Creation date :  01/01/23
-    Last modified date:  --
+    Creation date :  21/01/23
     Description :  This file deals with the functionality to fill in and verify the validity of the numbers in the sudoku board.
     The "PossibleDigits" function creates a 2D array of pointers that holds the possible values for each slot on the board.
     The "CheckPossibleValuesForSlot" function, which receives a board and an X, Y position on the board, and

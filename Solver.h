@@ -1,8 +1,16 @@
 /**************************************************************************************
     Author: Mordechai Ben Shimon
-    Creation date :  01/01/23
-    Last modified date:  --
-    Description : solver .
+    Creation date :  21/01/23
+    Description :  This file deals with the functionality to fill in and verify the validity of the numbers in the sudoku board.
+    The "PossibleDigits" function creates a 2D array of pointers that holds the possible values for each slot on the board.
+    The "CheckPossibleValuesForSlot" function, which receives a board and an X, Y position on the board, and
+    returns an array of possible values for that particular slot.
+    The "on stage" function looks for a position on the board that has only one valid value and updates the position with that value.
+    In case no such position is found, the function returns the coordinates of the position with the smallest possible values on the board in the output parameters, X and Y.
+    The "UpdatingPossibleDigits" function updates the valid digits for the row, column, and 3x3 square containing the most recently entered number.
+    The "CheckingLegalityFboard" function verifies whether the value entered in the board is legal according to the sudoku rules.
+    The "IsBoardFull" function checks if the board is completely full and returns 1 if true or 0 if false.
+    Finally, the "EnterNumberFromUser" function gives the user the ability to enter a number for a specific cell on the board.
 ***************************************************************************************/
 
 #ifndef __SOLVER_H__

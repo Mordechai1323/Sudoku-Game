@@ -1,9 +1,9 @@
 /**************************************************************************************
     Author: Mordechai Ben Shimon
-    Creation date :  01/01/23
-    Last modified date:  --
+    Creation date :  21/01/23
     Description :  General Errors.
 ***************************************************************************************/
+
 #include <stdio.h>
 
 #include "Errors.h"

@@ -1,8 +1,9 @@
 /**************************************************************************************
     Author: Mordechai Ben Shimon
-    Creation date :  01/01/23
-    Last modified date:  --
-    Description :  Ui
+    Creation date :  21/01/23
+    Description :  This file handles all aspects of interacting with the user, including welcome messages such as a greeting and displaying the current state of the game board. Additionally,
+    it is responsible for capturing input from the user, such as their move or other interactions with the game.
+    Overall, it is responsible for managing the user interface and the flow of information between the user and the game.
 ***************************************************************************************/
 
 #define _CRT_SECURE_NO_WARNINGS

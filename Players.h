@@ -1,8 +1,15 @@
 /**************************************************************************************
     Author: Mordechai Ben Shimon
-    Creation date :  01/01/23
-    Last modified date:  --
-    Description :  player .
+    Creation date :  21/01/23
+    Description : This file contains functions related to managing a list of players in a game.
+    The functions allows you to create a new player, create a list of active players, create an array of players from the linked list of active players and
+    sort the array of active players using the merge sort algorithm,
+    Create a binary tree from the orderly array, and scan the binary tree using the inOrder algorithm.
+    This file also includes functionality for determining whether a player has completed the game successfully, and if so, moving them to a list of winning players
+    and removing them from the active players list and their cell in the binary tree is set to NULL.
+    If a player has not completed the game, they can fill in the slot on their board that has the least number of options.
+    If a player's board is a failure, they are removed from the active player list and their cell in the binary tree is set to NULL.
+    The file also includes a function for destroying the list of active players, the array of active players, the binary tree, and the list of winning players.
 ***************************************************************************************/
 
 #ifndef __PLAYERS_H__
