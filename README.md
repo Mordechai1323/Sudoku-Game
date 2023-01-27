@@ -1,5 +1,5 @@
 # Sudoku Game
-This project was written as part of a final project for the course Advanced Programming in the C language.
+This project was written as part of a final project for the course Advanced Programming in the C language(full assignment details [here]()).
 
 # Description
 Sudoku is a logic-based, combinatorial number-placement puzzle. The objective of the game is to fill a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids that compose the grid contain all of the digits from 1 to 9. The puzzle setter provides a partially completed grid, which for a well-posed puzzle has a single solution.
@@ -18,9 +18,6 @@ We will build a tree of players from the sorted array and then we will go throug
 - If he has not yet finished, we will allow him to choose one of the options in the slot with the minimum number of options. After receiving the option from the user, the player's board and matrix must be updated accordingly.
 
 At the end, the list of winners and their boards will be printed.
-
-# More details about the project
-For more details about the project, please refer to the project report and documentation.
 
 # Built with
 C language
